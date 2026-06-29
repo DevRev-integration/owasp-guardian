@@ -1,75 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OWASP Guardian | Login</title>
 
     <link rel="stylesheet" href="css/login.css">
-
-    <script defer src="js/login.js"></script>
+    <script src="js/login.js" defer></script>
 </head>
 
 <body>
 
-<div class="container">
+    <div class="background"></div>
 
-    <div class="login-card">
+    <main class="login-page">
 
-        <h1>🛡️ OWASP Guardian</h1>
+        <section class="login-card">
 
-        <p class="subtitle">
-            Learn • Detect • Defend
-        </p>
+            <div class="logo-section">
 
-        <form id="loginForm">
+                <h1>OWASP Guardian</h1>
 
-            <input
-                type="text"
-                id="username"
-                placeholder="Username"
-            >
-
-            <input
-                type="password"
-                id="password"
-                placeholder="Password"
-            >
-
-            <div class="remember">
-
-                <input
-                    type="checkbox"
-                    id="remember"
-                >
-
-                <label for="remember">
-                    Remember Me
-                </label>
+                <p>Learn • Detect • Defend</p>
 
             </div>
 
-            <button id="loginBtn">
-                Login
-            </button>
+            <form id="loginForm" novalidate>
 
-        </form>
+                <div class="input-group">
 
-        <p class="signup">
+                    <label for="username">Username</label>
 
-            Don't have an account?
+                    <input
+                        type="text"
+                        id="username"
+                        placeholder="Enter your username"
+                    >
 
-            <a href="signup.html">
+                </div>
 
-                Sign Up
+                <div class="input-group">
 
-            </a>
+                    <label for="password">Password</label>
 
-        </p>
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Enter your password"
+                    >
 
-    </div>
+                </div>
 
-</div>
+                <div class="options">
+
+                    <label>
+
+                        <input type="checkbox" id="remember">
+
+                        Remember Me
+
+                    </label>
+
+                </div>
+
+                <button type="submit" id="loginBtn">
+
+                    Login
+
+                </button>
+
+            </form>
+
+            <p class="signup-text">
+
+                New here?
+
+                <a href="signup.html">
+
+                    Create an account
+
+                </a>
+
+            </p>
+
+        </section>
+
+    </main>
 
 </body>
+
 </html>
